@@ -1,6 +1,6 @@
 # Assignments CipherSchools
 
-This is repository is created for submission of assignments.
+This repository is created for submission of assignments.
 
 1. Assignment 1
 
