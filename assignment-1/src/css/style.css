@@ -1,0 +1,232 @@
+body{
+    background: #22272b;
+    color: #e38a1e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+main{
+  margin: 10%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+header{
+  /* background-image: url("file:///C:/Users/jagar/Desktop/Web/Assignments/Assignment%201/src/img/background-image.jpg"); */
+  height: 90%;
+  text-align: left ;
+  color: white;
+  font-size: 150%;
+  bottom: 10px;
+}
+
+
+nav ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 10% 11% 11% 15% 11% 11% 13% 11%;
+  grid-gap: 10px;
+  color: #444;
+}
+
+nav li {
+  background-color: #444;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 120%;
+}
+
+#about{
+  height: 100%;
+}
+
+#hobbies{
+  width: 50%;
+  height: 250px;
+}
+
+#interest{
+  width: 50%;
+  height: 250px;
+}
+
+#about div{
+  background-color: #444;
+  color:white;
+  margin: 2%;
+  border-radius: 20px;
+  width: 45%;
+  height: 200px;
+  text-align: justify;
+}
+
+p{
+  margin: 15px;
+  padding: 10px;
+  text-align: left;
+  font-size: 120%;
+}
+
+#education, #projects ul, #certificates ul{
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  color: #444;
+}
+
+div.box, #projects li, #certificates li{
+  background-color: #444;
+  color: #fff;
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 120%;
+}
+
+#about ul {
+  display: grid;
+  list-style-type: square;
+  grid-template-columns: 50% 50%;
+  /* grid-gap: 10px; */
+  color: #444;
+}
+
+#about li {
+  background-color: #444;
+  color: #fff;
+  height: 40px;
+  /* text-align: center; */
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 120%;
+}
+
+#tech_skills ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    color: #444;
+}
+  
+#tech_skills li {
+    background-color: #444;
+    color: #fff;
+    height: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 120%;
+}
+
+
+#other_skills ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    color: #444;
+}
+  
+#other_skills li {
+    background-color: #444;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 120%;
+}
+
+#languages ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  color: #444;
+}
+
+#languages li {
+  background-color: #444;
+  color: #fff;
+  height: 60px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 120%;
+}
+
+
+:root {
+  --mainColor: #444;
+}
+
+h3, h4{
+  color: #e38a1e;
+}
+
+h2 {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+    background-repeat: repeat-x;
+    background-size: 100%;
+  color: #e38a1e;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+h2:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+footer ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+}
+
+footer li {
+  color: #fff;
+  height: 50px;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 120%;
+}
+
+#social ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 20% 5% 20%;
+  grid-gap: 10px;
+  padding: 20px;
+  margin-left: 43%;
+  margin-right: 25%;
+  font-size: 120%;
+}
+
+#social li {
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 120%;
+}
