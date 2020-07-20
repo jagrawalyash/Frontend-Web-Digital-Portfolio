@@ -10,4 +10,4 @@ This repository is created for submission of assignments.
 
 Replica of sportbible.com using Bootstrap.
 
-<a href="https://jagrawalyash.github.io/assignments/assignment-2/" target="_blank">Demo: SportsBible</a>
+<a href="https://jagrawalyash.github.io/assignments/assignment-2/" target="__blank">Demo: SportsBible</a>
