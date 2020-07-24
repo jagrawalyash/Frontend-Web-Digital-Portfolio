@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="./src/img/js-icon.png" type="image/png">
+    <style>
+        .card{
+            margin: 2% 10%;
+        }
+        .btn{
+            margin: 10px;
+            width: 15%;
+        }
+        .input{
+            border-radius: 5px;
+        }
+        .card-text{
+            color: white;
+        }
+        #footer{
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.836);
+        }
+    </style>
+     <script src="./src/js/file.js"></script>
+<title>Javascript Task</title>
+</head>
+
+<body style="background-color: black;">
+
+    <div class="jumbotron jumbotron-fluid bg-secondary" style="padding: 1% 5%; position: sticky; top:0px; z-index: 1; border-bottom: groove; color: white; border-color: black;">
+        <h1><img src="./src/img/js-icon.png" width="70px" height="70px">
+            Javascript Task</h1><br>
+        <ul class="nav nav-pills nav-fill" style="position: relative; bottom: 0px;">
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#minToSec" style="color: white;">minToSec()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#dividesEvenly" style="color: white;">dividesEvenly()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#str_con_cat" style="color: white;">str_con_cat()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#addUpto" style="color: white;">addupto()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#replaceVowel" style="color: white;">replaceVowel()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#specialReverse" style="color: white;">specialReverse()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#testJackpot" style="color: white;">testJackpot()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#removeDups" style="color: white;">removeDups()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#realType" style="color: white;">realType()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="#numInStr" style="color: white;">numInStr()</a></li>
+            <li class="nav-item btn btn-dark"><a class="nav-link" href="javascript: document.body.scrollIntoView(false);" style="color: white;">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="card text-center bg-secondary" id="minToSec">
+        <div class="card-header bg-dark text-light">
+            Convert Minutes to second
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>Minutes</label>
+            <br><input class="input" type="text" id="minutes"><br>
+            <label>Seconds</label>
+            <br><input class="input" type="text" name="=" id="seconds" disabled></p>
+          <a class="btn btn-dark text-light" onclick="seconds.value=convertMinutestoSecond(document.getElementById('minutes').value)">Convert</a>
+        </div>
+        <div class="card-footer bg-dark text-muted">
+            convertMinutestoSecond()
+        </div>
+      </div>
+    
+    <div class="card bg-secondary text-center" id="dividesEvenly">
+        <div class="card-header bg-dark text-light">
+            Divides Evenly
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>a</label> 
+            <br><input type="text" class="input" id="input1"><br>
+            <label>b</label>
+            <br><input type="text" class="input" id="input2"><br>
+            <label>Result</label>
+            <br><input type="text" class="input" id="dividesevenly" disabled>    
+          </p>
+          <a class="btn btn-dark text-light" onclick="dividesevenly.value=dividesEvenly(document.getElementById('input1').value,document.getElementById('input2').value)">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            dividesEvenly()
+        </div>
+      </div>
+    
+          
+    <div class="card text-center bg-secondary" id="str_con_cat">
+        <div class="card-header bg-dark text-light">
+            Count Instances of a Character in a String
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>String</label> 
+            <br><input type="text" class="input" id="string"><br>
+            <label>Letter</label> 
+            <br><input type="text" class="input" id="letter"><br>
+            <label>Char count</label> 
+            <br><input type="text" class="input" id="char_count" disabled>	       
+          </p>
+          <a class="btn btn-dark text-light" onclick="char_count.value=str_con_cat(document.getElementById('string').value,document.getElementById('letter').value)">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            str_con_cat()
+        </div>
+      </div>
+    
+          
+      <div class="card text-center bg-secondary" id="addUpto">
+        <div class="card-header bg-dark text-light">
+            Add up the Numbers from a Single Number
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>Enter integer</label> 
+            <br><input type="text" class="input" id="int_sum"><br>
+            <label>Sum</label>
+            <br><input type="text" id="result_sum" disabled>
+          </p>
+          <a class="btn btn-dark text-light" onclick="result_sum.value=addUpto(document.getElementById('int_sum').value)">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            addUpto()
+        </div>
+      </div>
+
+      
+      <div class="card text-center bg-secondary" id="replaceVowel">
+        <div class="card-header bg-dark text-light">
+            Replace Vowel with Another Character
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>Enter String (Replace Vowel)</label>
+            <br><input type="text" id="vowel_str"><br>
+            <label>Replaced string</label> 
+            <br><input type="text" id="replaced_str" disabled>
+          </p>
+          <a  class="btn btn-dark text-light" onclick="replaced_str.value=replaceVowel(document.getElementById('vowel_str').value)">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            replaceVowel()
+        </div>
+      </div>
+
+      <div class="card text-center bg-secondary" id="specialReverse">
+        <div class="card-header bg-dark text-light">
+            Reverse Words Starting with a Particular Letter
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>String (Reverse word)</label>
+            <br><input type="text" id="rev_str"><br>
+            <label>Enter character</label>
+            <br><input type="text" id="rev_char"><br>
+            <label>Special String</label>
+            <br><input type="text" id="sp_str" disabled>
+          </p>
+          <a  class="btn btn-dark text-light" onclick="sp_str.value=specialReverse(document.getElementById('rev_str').value,document.getElementById('rev_char').value)">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            specialReverse()
+        </div>
+      </div>
+
+      <div class="card text-center bg-secondary" id="testJackpot">
+        <div class="card-header bg-dark text-light">
+            Hitting the Jackpot
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>arr[0]</label>
+            <br><input type="text" id="arr0"><br>
+            <label>arr[1]</label>
+            <br><input type="text" id="arr1"><br>
+            <label>arr[2]</label>
+            <br><input type="text" id="arr2"><br>
+            <label>arr[3]</label>
+            <br><input type="text" id="arr3"><br>
+            <label>Jackpot</label>
+            <br><input type="text" id="jackpot" disabled>
+          </p>
+          <a  class="btn btn-dark text-light" onclick="jackpot.value=testJackpot([document.getElementById('arr0').value,document.getElementById('arr1').value,document.getElementById('arr2').value,document.getElementById('arr3').value])">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            testJackpot()
+        </div>
+      </div>
+
+      <div class="card text-center bg-secondary" id="removeDups">
+        <div class="card-header bg-dark text-light">
+            Remove Duplicates from an Array
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>arr(comma separated)</label>
+            <br><input type="text" id="arr_dup"><br>
+            <label>Filtered array</label>
+            <br><input type="text" id="filter_arr" disabled>
+         </p>
+          <a  class="btn btn-dark text-light" onclick="filter_arr.value=removeDups(convertToArray(document.getElementById('arr_dup').value))">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            removeDups()
+        </div>
+      </div>
+
+      <div class="card text-center bg-secondary" id="realType">
+        <div class="card-header bg-dark text-light">
+            Get Real Type
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>Enter data (to check its type)</label>
+            <br><input type="text" id="data"><br>
+            <label>Typeof</label>
+            <br><input type="text" id="typeOf" disabled> 
+            <br><br><br>NOTE: check logs for correct answer.
+          </p>
+          <a  class="btn btn-dark text-light" onclick="typeOf.value=realType(document.getElementById('data').value)">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            realType()
+        </div>
+      </div>
+
+      <div class="card text-center bg-secondary">
+        <div class="card-header bg-dark text-light" id="numInStr">
+            Numbers in Strings
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <label>Enter Array</label>
+            <br><input type="text" id="arr_alpha"><br>
+            <label>Alpha Num Array</label>
+            <br><input type="text" id="alpha_num" disabled> 
+          </p>
+          <a  class="btn btn-dark text-light" onclick="alpha_num.value=numInStr(convertToArray(document.getElementById('arr_alpha').value))">Click</a>
+        </div>
+        <div class="card-footer text-muted bg-dark">
+            numInStr()
+        </div>
+      </div>
+
+      <footer id="footer">
+        <a href="#">Back to Top</a>
+        <hr>
+        Designed By: Yash Prajapati<br>
+        <a href="https://www.linkedin.com/in/jagarwal-yash/" target="__blank">LinkedIn</a> |
+        <a href="https://github.com/jagrawalyash" target="_blank">Github</a>
+        <hr>
+    </footer>
+</body>
+</html>
