@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/virus.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>COVID-19 Tracker</title>
+</head>
+<body background="./src/img/tooplate_body.jpg" style="background-attachment: fixed;">
+    <div class="container-fluid">
+        <h1 class="heading text-light" style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">COVID-19 Tracker</h1>
+        <br><br>
+        <div class="row globalData">
+        
+        </div>
+
+        <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner dataBody">
+            <!-- Country wise data here -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+     
+        <div class="text-center">
+          <div class="search-box">
+            <input type="text" id="searchBox" onkeyup="searchFunction()" placeholder="Search by country"/>
+          </div>
+        </div>
+        <table id="myTable">
+            <thead>
+              <tr>
+                <th class="p-3 country" scope="col">Country</th>
+                <th class="p-3 totalCases" scope="col">Total Cases</th>
+                <th class="p-3 totalRecovered" scope="col">Total Recovered</th>
+                <th class="p-3 totalDeaths" scope="col">Total Deaths</th>
+                <th class="p-3 newCases" scope="col">New Cases</th>
+                <th class="p-3 newRecovered" scope="col">New Recovered</th>
+                <th class="p-3 newDeaths" scope="col">New Deaths</th>
+              </tr>
+            </thead>
+            <tbody class="tableBody">
+              <!-- This is where the rows gets appended -->
+            </tbody>
+        </table>
+      </table>
+
+      <div class="d-none" id="notFound">
+          <p>No matches found</p>
+        </div>
+
+        <div id="whatsApp">
+          <a href="https://wa.me/919610253419"><img src="./src/img/wapp.svg" width="50px" height="50px"></a>
+        </div>
+
+        <div  class="">
+          <p class="lastUpdated fixed-bottom">Last updated: </p>
+          <p style="text-align: center; color: wheat;">Developed By: Yash Prajapati<br>
+              <a href="https://github.com/jagrawalyash/">GitHub | </a>
+              <a href="https://www.linkedin.com/in/jagarwal-yash/">LinkedIn</a>
+          </p>
+        </div>
+        <div class="text-left">
+          <button class="btn backToTop">Back to top</div>
+        </div>
+    </div>
+    <script src="./src/js/script.js"></script>
+<!-- 
+    <style>
+      body{
+      }
+    </style> -->
+</body>
+</html>

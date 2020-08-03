@@ -1,0 +1,191 @@
+.country {
+    background-color:rgb(108,117,125);
+}
+
+.totalCases, .newCases {
+    background-color: rgb(0,123,255);
+}
+
+.totalRecovered, .newRecovered {
+    background-color: rgb(40,167,69);
+}
+
+.totalDeaths, .newDeaths {
+    background-color: rgb(220,53,69);
+}
+
+.countryRow {
+    background-color: rgba(108,117,125,0.5);
+}
+
+.totalCasesRow, .newCasesRow {
+    background-color: rgba(0,123,255,0.5);
+}
+
+.totalRecoveredRow, .newRecoveredRow {
+    background-color: rgba(40,167,69,0.5);
+}
+
+.totalDeathsRow, .newDeathsRow {
+    background-color: rgba(220,53,69,0.5);
+}
+
+.heading {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.backToTop {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin-bottom: 3%;
+}
+
+.backToTop:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: wheat;
+}
+
+.globalTotalCasesHeader, .globalTotalRecoveredHeader, .globalTotalDeathsHeader, 
+.globalTotalCases, .globalTotalRecovered, .globalTotalDeaths {
+    font-size: 50px;
+}
+
+.globalTotalCases, .globalTotalRecovered, .globalTotalDeaths {
+    font-weight: bold;
+    background-color:rgb(236, 233, 233);
+}
+
+.globalTotalCases {
+    color: #34b1eb;
+}
+
+.globalTotalRecovered {
+    color: #8aca2b;
+}
+
+.globalTotalDeaths {
+    color: #eb4034;
+}
+
+.globalTotalCasesHeader, .globalTotalRecoveredHeader, .globalTotalDeathsHeader{
+    background-color: lightgray;
+    color: #000;
+}
+
+.lastUpdated{
+    background-color: rgba(255, 250, 250, 0.63);
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+tr { 
+    background: #eee; 
+}
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+}
+
+#notFound {
+    text-align: center;
+}
+
+
+.search-box {
+	border: solid 5px gray;
+	display: inline-block;
+	position: relative;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    padding: 5px 40px 5px 10px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 300px;
+}
+
+#whatsApp{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+/* For Mobile Phones */
+@media (max-width: 760px) {
+
+    .dataBody, #carouselExampleFade{
+        display: none;
+    }
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+    td, th {
+        text-align: left; 
+    }
+
+	tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+    }
+	
+	td:nth-of-type(1):before { content: "Country"; }
+	td:nth-of-type(2):before { content: "Total Cases"; }
+	td:nth-of-type(3):before { content: "Total Recovered"; }
+	td:nth-of-type(4):before { content: "Total Deaths"; }
+	td:nth-of-type(5):before { content: "New Cases"; }
+	td:nth-of-type(6):before { content: "New Recovered"; }
+	td:nth-of-type(7):before { content: "New Deaths"; }
+}
+
+/* Breakpoint for iPad */
+@media (max-width: 770px) {
+    .dataBody, #carouselExampleFade{
+        display: none;
+    }
+}
