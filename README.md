@@ -4,7 +4,7 @@ This repository is created for submission of assignments.
 
 ### **1. Assignment 1**
 
-:globe_with_meridians:  <a href="https://jagrawalyash.github.io/assignments/assignment-1/" target="_blank">Demo: My Portfolio</a>
+:globe_with_meridians:  <a href="https://jagrawalyash.github.io/Frontend-Web-Digital-Portfolio/assignment-1/" target="_blank">Demo: My Portfolio</a>
 
 ### **2. Assignment 2**
 
