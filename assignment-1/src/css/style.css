@@ -230,3 +230,11 @@ footer li {
   font-weight: 700;
   font-size: 120%;
 }
+
+@media screen and (max-width: 800px) {
+  .modal{
+    width: 330px;
+    align-self: center;
+    margin: auto;
+  }
+}
