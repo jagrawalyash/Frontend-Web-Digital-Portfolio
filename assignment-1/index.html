@@ -9,51 +9,57 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Yash Prajapati | Software Engineer</title>
 </head>
 <body>
     <!-- Carousel -->
     
-    <header id="header" style="background-image: url(./src/img/background-image.jpg); height: 600px;">
-        <img src="./src/img/yash.jpg" width="300px" height="300px" style="border-radius: 200px; margin: 3%;">
-        <h1 style="position: absolute; top: 50%; font-weight: bolder; margin: 0 3%; color: aliceblue;">Hi, I'm Yash Prajapati<br>
-            <a style="color: skyblue; font-size: xx-large;">Assistant System Engineer
+    <header id="header">
+        <img src="./src/img/yash.jpg">
+        <h1>Hi, I'm Yash Prajapati<br>
+            <a id="title">Assistant System Engineer
             <br>TATA Consultancy Services</a>     
         </h1>   
     </header>
 
+   
+        
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-sticky">
         <div class="container-fluid">
+            
+          <!-- <p class="navbar-brand navbar-toggler " >Menu</p> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; align-items: center; margin: auto;">
-              <li class="nav-item btn bg-darker nav-btn">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="align-items: center; margin: auto;">
+              <li class="nav-item btn bg-darker nav-btn" style="width: auto;">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item btn bg-darker nav-btn" style="width: auto">
-                <a class="nav-link active" aria-current="page" href="#">Education</a>
+                <a class="nav-link active" aria-current="page" href="#education">Education</a>
               </li>
               <li class="nav-item btn bg-darker nav-btn" style="width: auto">
-                <a class="nav-link active" aria-current="page" href="#">Technical Skills</a>
+                <a class="nav-link active" aria-current="page" href="#tech">Technical Skills</a>
               </li>
               <li class="nav-item btn bg-darker nav-btn" style="width: auto">
-                <a class="nav-link active" aria-current="page" href="#">Interpersonal Skills</a>
+                <a class="nav-link active" aria-current="page" href="#skill">Interpersonal Skills</a>
               </li>
               <li class="nav-item btn bg-darker nav-btn" style="width: auto">
-                <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
               </li>
               <li class="nav-item btn bg-darker nav-btn" style="width: auto">
-                <a class="nav-link active" aria-current="page" href="#">Certifications</a>
+                <a class="nav-link active" aria-current="page" href="#certificates">Certifications</a>
               </li>
               <li class="nav-item btn bg-darker nav-btn" style="width: auto">
-                <a class="nav-link active" aria-current="page" href="#">Languages</a>
+                <a class="nav-link active" aria-current="page" href="#lang">Languages</a>
               </li>
               <li class="nav-item btn bg-darker nav-btn" style="width: auto">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                <a class="nav-link active" aria-current="page" href="#footer">Contact</a>
               </li>
             </ul>
           </div>
@@ -62,7 +68,7 @@
 
     <!-- about -->
 
-    <div class="container py-5">
+    <div class="container py-5" id="about">
         <h2 class="m-5 text-orange text-uppercase text-center">About Me</h2>
         <div class="row align-items-md-stretch">
             <div class="col-md-6 py-3">
@@ -91,7 +97,9 @@
                 <div class="h-100 p-5 text-white bg-darker rounded-my">
                     <h2 class="text-orange">Professional Summary</h2>
                     <p>Energetic candidate with the drive and dedication necessary to succeed in the Computer Science industry. Demonstrated the ability to complete tasks accurately despite interruptions and competing demands. </p>
-                    <button class="btn btn-outline-light" type="button">LinkedIn Profile</button>
+                    <a href="https://www.linkedin.com/in/jagarwal-yash/" target="_blank">
+                        <button class="btn btn-outline-light" type="button">LinkedIn Profile</button>
+                    </a>
                 </div>
             </div>
             <div class="col-md-6  py-3">
@@ -104,9 +112,9 @@
     </div>
 <hr>
     <!-- education -->
-    <div class="container text-center">
+    <div class="container text-center" id="education">
         <h2 class="m-5 text-orange text-uppercase">Education</h2>
-        <div class="row">
+        <div class="row flex-container">
           <div class="col col-sm-12 col-xs col-xs-12 col-lg-4 mb-2">
             <div class="card text-white bg-darker ed-card">
                 <img src="./src/img/edu_icon.png" class="img-center" alt="..." width="100px" height="100px">
@@ -144,11 +152,11 @@
     </div>
 <hr>
     <!-- technical skills  -->
-    <div class="container text-center">
+    <div class="container text-center" id="tech">
         <h2 class="m-5 text-orange text-uppercase">Technical Skills</h2>
         <div class="row">
           <div class="col col-sm-6 col-lg-3 mb-3">
-            <div class="card  bg-darker text-white">
+            <div class="card  bg-darker text-white py-2">
                 <img src="./src/img/py_icon.png" class="img-center icon-img" alt="...">
                 <div class="card-body">  
                     <h4 class="card-text">Python</h4>
@@ -215,7 +223,7 @@
     </div>
 <hr>
     <!-- interpersonal skills -->
-    <div class="container text-center">
+    <div class="container text-center" id="skill">
         <h2 class="m-5 text-orange text-uppercase">Interpersonal Skills</h2>
         <div class="row">
           <div class="col col-sm-6 col-lg-3 mb-3">
@@ -279,8 +287,8 @@
 <hr>
     <!-- projects -->
     <div class="container text-center">
-        <h2 class="m-5 text-orange text-uppercase">Projects</h2>
-        <div class="row">
+        <h2 class="m-5 text-orange text-uppercase"  id="projects">Projects</h2>
+        <div class="row flex-container">
           <div class="col col-sm-12 col-xs col-xs-12 col-lg-4 mb-2">
             <div class="card text-white bg-darker ed-card py-3">
                 <img src="./src/img/code-513.png" class="img-center" alt="..." width="100px" height="100px">
@@ -307,9 +315,9 @@
             <div class="card text-white bg-darker ed-card py-3">
                 <img src="./src/img/code-513.png" class="img-center" alt="..." width="100px" height="100px">
                 <div class="card-body">
-                    <h3>Health & Fitness Assistant</h3>
-                    <hr><h4 class="card-text">Virtual Medical Assistant Chatbot</h4>
-                    <p class="card-text">Technology: Springboot, Frontend</p>
+                    <h3>Library Management System</h3>
+                    <hr><h4 class="card-text">Managing Library transactions</h4>
+                    <p class="card-text">Technology: C++, MySql</p>
                     <h5>(2021)</h5>
                 </div>
               </div>
@@ -329,7 +337,7 @@
             <div class="card text-white bg-darker ed-card py-3">
                 <img src="./src/img/code-513.png" class="img-center" alt="..." width="100px" height="100px">
                 <div class="card-body">
-                    <h3>Nyaya - It's time to upgrade Portal</h3>
+                    <h3>Nyaya - It's time to upgrade</h3>
                     <hr><h4 class="card-text">Online portal for judiciary</h4>
                     <p class="card-text">Technology: Web based project using php and MySql</p>
                     <h5>(2018)</h5>
@@ -340,14 +348,14 @@
     </div>
 
     <!-- certificates -->
-    <div class="container text-center">
+    <div class="container text-center" id="certificates">
         <h2 class="m-5 text-orange text-uppercase">Certifications</h2>
-        <div class="row">
+        <div class="row flex-container">
           <div class="col col-sm-12 col-xs col-lg-4 mb-2">
             <div class="card text-white bg-darker ed-card py-3">
                 <img src="./src/img/certificate_icon.png" class="img-center" alt="..." width="100px" height="100px">
                 <div class="card-body">
-                    <h4>IT Fundamentals for CyberSecurity</h4>
+                    <h4>IT Fundamentals for Cyber Security</h4>
                     <hr><h5 class="card-text">IBM</h5>
                     <p class="card-text">Coursera</p>
                     <h5>(July 2020)</h5>
@@ -369,7 +377,7 @@
             <div class="card text-white bg-darker ed-card py-3">
                 <img src="./src/img/certificate_icon.png" class="img-center" alt="..." width="100px" height="100px">
                 <div class="card-body">
-                    <h4>Open Source Software Development</h4>
+                    <h4>Open Source Software Dev.</h4>
                     <hr><h5 class="card-text">The Linux Foundation</h5>
                     <p class="card-text">Coursera</p>
                     <h5>(June 2020)</h5>
@@ -411,8 +419,32 @@
           </div>
         </div>
     </div>
+<hr>
 
-    <footer class="page-footer font-small purple pt-4 bg-light mt-4">
+<!-- Languages -->
+    <div class="container text-center" id="lang">
+        <h2 class="m-5 text-orange text-uppercase">Languages</h2>
+        <div class="row">
+          <div class="col col-sm-6 col-lg-6 mb-3">
+            <div class="card iskill-card bg-darker text-white">
+                <div class="card-body">  
+                    <img src="./src/img/en_icon.png" alt="" width="50px" height="50px">
+                    <h4 class="card-text">English</h4>
+                </div>
+              </div>
+          </div>
+          <div class="col col-sm-6 col-lg-6 mb-3">
+            <div class="card iskill-card bg-darker text-white">
+                <div class="card-body">
+                    <img src="./src/img/hi_icon.png" alt="" width="50px" height="50px">
+                    <h4 class="card-text">Hindi</h4>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small purple pt-4 bg-light mt-4" id="footer">
         <div class="container-fluid text-center text-md-left">
           <div class="row">
             <div class="col-md-4 mt-md-0 mt-3">
@@ -434,7 +466,44 @@
         <div class="footer-copyright text-center py-3">© Design & Developed by:
           <a href="https://www.linkedin.com/in/jagarwal-yash/" target="_blank"> Yash Prajapati</a>
         </div>
-        </footer>
+    </footer>
 
+
+    
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <!-- <i class="fas fa-arrow-up"></i> -->
+        <!-- <i class="bi bi-arrow-up-circle-fill">Back to top</i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </button>
+
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
