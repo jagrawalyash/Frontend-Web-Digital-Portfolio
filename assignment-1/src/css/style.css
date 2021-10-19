@@ -87,9 +87,8 @@ header h1{
     }
     
     header{
-        background-image: url(.././img/background-image.jpg); 
         height: 400px;
-        width: fit-content;
+        width: auto;
     }
 
     header img{
@@ -115,4 +114,12 @@ header h1{
         z-index: 2 !important; 
     }
 
+}
+
+@media screen and (max-width: 290px) {
+       
+    header{
+        height: auto;
+        width: auto;
+    }
 }
