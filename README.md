@@ -2,7 +2,7 @@
 
 This repository is created for submission of assignments.
 
-### **1. Assignment 1**
+### **1. Assignment 1 - Visit my Digital portfolio (100% responsive)**
 
 :globe_with_meridians:  <a href="https://jagrawalyash.github.io/Frontend-Web-Digital-Portfolio/assignment-1/" target="_blank">Demo: My Portfolio</a>
 
