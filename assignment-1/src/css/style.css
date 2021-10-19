@@ -6,10 +6,27 @@ body{
     margin-bottom: 5%;
 }
 
+header{
+    background-image: url(.././img/background-image.jpg); height: 600px;
+}
+
+header img{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px; margin: 3%;
+}
+
+header h1{
+    position: absolute; top: 50%; font-weight: bolder; margin: 0 3%; color: aliceblue;
+}
+
+#title{
+    color: skyblue; font-size: xx-large;
+}
 
 .nav-btn{
     margin: 15px;
-    width: 100px;
+    width: 150px !important;
 }
 
 .img-center{
@@ -44,5 +61,58 @@ body{
     color: #e38a1e !important;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50px;
+}
 
 /* 920px */
+@media screen and (max-width: 600px) {
+    .ed-card{
+        width: 100%;
+        height: auto;
+    }
+    .flex-container {
+        display: flex !important;
+        flex-direction: column !important;
+      }     
+    .nav-btn{
+        margin: 15px;
+        text-align: right !important;
+        background-color: #22272b !important;
+        width: 100% !important;
+    }
+    
+    header{
+        background-image: url(.././img/background-image.jpg); 
+        height: 400px;
+        width: fit-content;
+    }
+
+    header img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; margin: 3%;
+    }
+
+    header h1{
+        font-size: 30px !important;
+        position: relative; top: 10%; font-weight: bolder; margin: 0 3%; color: aliceblue;
+    }
+
+    #title{
+        color: skyblue; font-size: 20px;
+    }
+
+    .nav-sticky{
+        position: fixed !important;
+        top: 0px !important;
+        right: 0 !important;
+        border-radius: 0 0 0 40px;
+        z-index: 2 !important; 
+    }
+
+}
